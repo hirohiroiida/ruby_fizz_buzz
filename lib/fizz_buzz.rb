@@ -1,15 +1,11 @@
 def fizz_buzz(number)
   if number % 15 == 0
-    puts 'fizz_buzz'
+    p "Fizz Buzz"
   elsif number % 5 == 0
-    puts 'Buzz'
+    p "Buzz"
   elsif number % 3 == 0
-    puts 'Fizz'
+    p "Fizz"
   else
-    puts number
+    p number.to_s
   end
 end
-
-puts '半角で数字を入れてください？'
-number = gets.to_i
-fizz_buzz(number)

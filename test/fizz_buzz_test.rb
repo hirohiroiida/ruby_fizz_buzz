@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../lib/fizz_buzz'
 
-
+class FizzBuzzTest < Minitest::Test
   def test_fizz_buzz
     assert_equal '1', fizz_buzz(1)
     assert_equal '2', fizz_buzz(2)
@@ -12,3 +12,4 @@ require_relative '../lib/fizz_buzz'
     assert_equal 'Fizz Buzz', fizz_buzz(15)
     assert_equal 'Fizz Buzz', fizz_buzz(150)
   end
+end
